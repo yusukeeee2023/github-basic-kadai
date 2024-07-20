@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <!-- 文字化け防止ツール -->
+  <meta charset="utf-8">
+  <!-- タイトル -->
+  <head>
+    <title>5章課題</title>
+     <!-- ページ説明にはdescriptionを使用する。headタグの中に記載すること -->
+     <meta name="description" content="このページは5章の課題です。"> 
+  </head>
+  <body> 
+    <!--ここはヘッダーです--> 
+    <header> 
+    <h1>SAMURAIニュース</h1> 
+      <!-- navタグはheaderタグの中に基本入れる -->
+    <nav>
+      <a href="https://www.sejuku.net/">ホーム</a>
+      <a href="https://www.sejuku.net/">社会</a>
+      <a href="https://www.sejuku.net/">経済</a>
+      <a href="https://www.sejuku.net/">スポーツ</a>
+      <a href="https://www.sejuku.net/">テクノロジー</a>
+    </nav> 
+    </header>
+    <main> 
+    <!-- articleは記事を作成するタグです。articleタグの中には、Webサイトの訪問者に伝えたい内容を記述していきます。 -->
+    <article>
+    <!-- sectionはarticleタグ内でテーマの違う複数の記事を記述するときに、区切りをつけるためのタグ -->
+      <section>
+        <h2>社会</h2> 
+        <h3>和菓子店も「トリックオアトリート！」</h3> 
+        <p>日本でも年々人気の高まるハロウィン。<br>今年は大手和菓子店5社がハロウィン向けの和菓子セットを共同開発しました。</p> 
+        <!-- audioタグのcontrols属性を記述すると、音声ファイルが読み込まれ、再生ボタンや音量ボタン、スライダーなどが表示される -->
+        <audio src="ichi.mp3" controls></audio> 
+
+        <h3>私のおすすめ和菓子アンケートフォーム</h3>
+        <!-- 「ここからここまでがフォームである」ことを宣言 -->
+        <form>
+        <!-- labelはテキスト横に記載する項目 -->
+        <label>氏名</label>
+        <!-- テキストを記入するもの、placeholderは記入例を表示するもの -->
+        <input type="text" placeholder="名前を入力してください">
+        <br> 
+
+        <label>年代</label> 
+        <!-- selectはプルダウンで選択できるコード -->
+        <select> 
+        <!-- optionは選択した項目に記載するコード -->
+          <option>10代以下</option> 
+          <option>20代</option> 
+          <option>30代</option> 
+          <option>40代以上</option> 
+        </select>
+        <br> 
+
+        <!-- radioは複数の選択肢の中から1つだけクリックして選択できるフォーム -->
+        <!-- nameは統一して記載するのが基本 -->
+        <label>男性</label><input type="radio" name="gender"> 
+        <label>女性</label><input type="radio" name="gender"> 
+        <label>その他</label><input type="radio" name="gender"> 
+        <br> 
+
+        <label>おすすめの和菓子の名称</label>
+        <!-- テキストを記入するもの、placeholderは記入例を表示するもの -->
+        <input type="text" placeholder="例：みたらし団子」">
+        <br> 
+        
+        <label>おすすめする理由</label> 
+        <!-- textareaは長い文章を記入したい時に使用するコード -->
+        <textarea></textarea> 
+        <br>
+
+        <label>個人情報保護方針に同意する</label> 
+        <!-- checkboxは　はい　いいえ で答える時に使用。同意書に同意する際などに使用されることが多い。-->
+        <input type="checkbox"> 
+        <br> 
+
+        <!-- valueは送信ボタンの上に表示する -->
+        <input type="submit" value="送信"> 
+        <input type="reset" value="リセット">
+        </form>
+      </section> 
+      <!-- sectionはarticleタグ内でテーマの違う複数の記事を記述するときに、区切りをつけるためのタグ -->
+      <section>
+        <h2>テクノロジー</h2> 
+        <h3>SAMURAIが新しい動画をリリース</h3> 
+        <p>SAMURAI公式YouTubeで新しい動画がリリースされました。<br>動画の内容はHTML/CSSの解説です。</p> 
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2JLiGSUohEo?si=_Ir3nvYj0F5FpzkD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+    </article> 
+    </main>
+
+    <footer>
+      <!-- ©は特殊文字と呼ばれるもので、&で始まり;で終わる&文字;の形で書きます。©記号は&copy;と記述します。 -->
+      <p>&copy; SAMURAIニュース</p>
+    </footer>
+  </body>
+</html>
